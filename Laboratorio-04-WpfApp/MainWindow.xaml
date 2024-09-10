@@ -1,0 +1,29 @@
+﻿<Window x:Class="Laboratorio_04_WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratorio_04_WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel>
+
+        <Menu>
+            <!-- Proveedores -->
+            <MenuItem Header="_Mantenimiento">
+                <MenuItem Header="_Proveedores" Click="MenuItem_Click"/>
+                <MenuItem Header="_Pedidos"/>
+            </MenuItem>
+        </Menu>
+
+        <Grid>
+            <Button Margin="20px" HorizontalAlignment="Left" x:Name="listProducts" Width="100px" Height="20px" Content="Listar productos" Click="listProducts_Click"/>
+
+            <Button  HorizontalAlignment="Center" x:Name="listcategorias" Width="100px" Height="20px" Content="Listar categorias" Click="listcategorias_Click"/>
+        </Grid>
+        <DataGrid x:Name="productListado" Margin="10, 50, 10, 50"/>
+        
+    </StackPanel>
+    
+</Window>
